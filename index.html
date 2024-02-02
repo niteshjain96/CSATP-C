@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+      
+        var swiperImages = [];
+        for(let i=0;i<21;i++){
+          swiperImages.push(`Q-${i+1}.png`)
+        }
+function myFunction(src) {
+  var x = document.createElement("IMG");
+  x.setAttribute("src", src);
+
+  document.body.appendChild(x);
+}
+
+
+swiperImages.forEach(el => {
+ myFunction(el)
+
+})
+
+    </script>
+</body>
+</html>
